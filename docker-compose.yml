@@ -1,0 +1,23 @@
+services:
+  postgres:
+    container_name: postgres_tvshow_api
+    image: postgres:15.2-alpine
+    restart: unless-stopped
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    networks:
+      network_tvshow_api:
+
+volumes:
+  data:
+
+networks:
+  network_tvshow_api:
+    name: network_tvshow_api
+    driver: bridge

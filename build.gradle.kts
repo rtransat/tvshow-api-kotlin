@@ -20,7 +20,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+    implementation("org.postgresql:postgresql:42.5.4")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
