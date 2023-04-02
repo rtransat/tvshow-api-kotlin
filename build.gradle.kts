@@ -21,6 +21,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.postgresql:postgresql:42.5.4")
+    implementation("org.liquibase:liquibase-core:4.20.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
